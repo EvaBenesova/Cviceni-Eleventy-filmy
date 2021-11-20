@@ -1,10 +1,11 @@
 .hlavicka {
-	background-color: #9c27b0;
-	padding: 1rem;
+	background-color: $hlavni-barva;
+	padding: $mezera-od-okraju;
+	
 
 
 	&__obdelnik{
-		max-width: 52rem;
-		margin: 0 auto;
+		max-width: $sirka-obsahu;
+		margin: auto;
 	}
 }

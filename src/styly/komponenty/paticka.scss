@@ -1,0 +1,28 @@
+.paticka{
+   background-color: #fafafa;
+   
+   &__nazev{
+      margin-left: $mezera-od-okraju;
+   }
+   &__seznam{
+      list-style-type: none;margin-left: $mezera-od-okraju;
+      margin-left: $mezera-od-okraju;
+      padding: 0;
+      
+   }
+   &__polozka{
+      line-height: 1.1;
+      padding: 0.2em 0;
+   }
+   &__odkaz{
+      text-decoration: none;
+      color: black;
+   }
+
+
+  
+
+     
+
+}
+
