@@ -8,13 +8,30 @@ permalink: "/film/{{ film.nazev | slug }}/"
 ---
 <section class="filmy">
 <div class="filmy__obal">
-<h2>{{ film.nazev }}</h2>
-<p> Rok: {{ film.rok}}</p>
-<p> Země: {{ film.zeme | join (" / ") }}</p>
-<p> Žánr: {{ film.zanr | join (" / ")}}</p>
-<p> Délka: {{ film.delka}} minut</p>
+  
+  <h2 class="filmy__nazev">{{ film.nazev }}</h2>
+  <dl class="detaily">
+    <dt class="detaily__popis"> Rok:</dt>
+    <dd class="detaily__hodnota">{{ film.rok}}</dd>
+    <dt class="detaily__popis"> Země:</dt>
+    <dd class="detaily__hodnota">{{ film.zeme | join (" / ") }}</dd>
+    <dt class="detaily__popis"> Žánr:</dt>
+    <dd class="detaily__hodnota">{{ film.zanr | join (" / ")}}</dd>
+    <dt class="detaily__popis"> Délka:</dt>
+    <dd class="detaily__hodnota">{{ film.delka}} minut</dd>
+  </dl>
 
 <h3>Obsah</h3>
-<p>{{ film.obsah.text}} {{film.obsah.jmeno}}</p>
+<p>{{ film.obsah.text}}</p>
+
+<h3>Související filmy</h3>
+	{# <ul>
+		{% for souvisejiciFilm in film.souvisejici %}
+			<li>
+				<a href="/film.souvisejici/{{ souvisejiciFilm.nazev | slug }}">{{film.nazev }}</a>
+			</li>
+		{% endfor %}
+	</ul> #}
+
 </div>
 </section>

@@ -4,4 +4,20 @@
       max-width: $sirka-obsahu;
 		margin: auto;
    }
+   &__nazev{
+      font-size: 32px;
+   }
+
+}
+
+.detaily{
+   display: grid;
+   grid-template-columns: auto 1fr;
+   gap: 0.2rem 0.5rem;
+   &__popis{
+      font-weight: 700;
+   }
+   &__hodnota{
+      margin: 0;
+   }
 }
