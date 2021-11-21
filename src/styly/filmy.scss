@@ -1,5 +1,6 @@
 .filmy{
-   width: $sirka-obsahu;
-   margin-left:$mezera-od-okraju;
-   
+	padding: $mezera-od-okraju;
+   &__obal{
+      max-width: 5rem;
+   }
 }
