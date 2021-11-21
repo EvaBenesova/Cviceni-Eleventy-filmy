@@ -1,13 +1,15 @@
 ---
 layout: zakladni
 ---
+<section class="obsah">
+	<h1 class="obsah__nazev">Všechny</h1>
 
-<h1>Všechny</h1>
+	<ul class="obsah__seznam">
+		{% for film in filmy %}
+			<li class="obsah__polozka">
+				<a href="/film/{{ film.nazev | slug }}" class="obsah__odkaz">{{ film.nazev }}</a>
+			</li>
+		{% endfor %}
+	</ul>
 
-		<ul>
-			{% for film in filmy %}
-				<li>
-					<a href="/film/{{ film.nazev | slug }}">{{ film.nazev }}</a>
-				</li>
-			{% endfor %}
-		</ul>
+</section>

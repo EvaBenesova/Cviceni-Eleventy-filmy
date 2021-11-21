@@ -7,11 +7,16 @@ pagination:
 permalink: "/film/{{ film.nazev | slug }}/"
 
 
----
 
-<h2>{{ film.nazev }}</h2>
-{# <p>{{ film.rok }}</p>
-<p>{{ film.zanr }}</p>
-<p>{{ film.zeme }}</p>
-<p>{{ film.delka }}</p>
-<p>{{ film.kontakty }}</p> #}
+---
+<section class="filmy">
+  <h1 class="filmy__nazev">{{ film.nazev }}</h1>
+  <p>{{ film.rok }}</p>
+  <p>{{ film.zanr }}</p>
+  <p>{{ film.zeme }}</p>
+  <p>{{ film.delka }}</p>
+  <p>{{ film.obsah  }}</p>
+
+
+
+</section>

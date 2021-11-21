@@ -1,14 +1,19 @@
 .paticka{
    background-color: #fafafa;
+   padding: 1rem;
+
    
    &__nazev{
       margin-left: $mezera-od-okraju;
+      max-width: $sirka-obsahu;
+		margin: auto;
    }
    &__seznam{
-      list-style-type: none;margin-left: $mezera-od-okraju;
+      list-style-type: none;
       margin-left: $mezera-od-okraju;
       padding: 0;
-      
+      max-width: $sirka-obsahu;
+		margin: auto; 
    }
    &__polozka{
       line-height: 1.1;
@@ -17,6 +22,9 @@
    &__odkaz{
       text-decoration: none;
       color: black;
+   }
+   &__odkaz:hover{
+      text-decoration: underline;
    }
 
 
