@@ -11,11 +11,16 @@ permalink: "/film/{{ film.nazev | slug }}/"
 ---
 <section class="filmy">
   <h1 class="filmy__nazev">{{ film.nazev }}</h1>
-  <p>{{ film.rok }}</p>
-  <p>{{ film.zanr }}</p>
-  <p>{{ film.zeme }}</p>
-  <p>{{ film.delka }}</p>
-  <p>{{ film.obsah  }}</p>
+  <p>Rok: {{ film.rok }}</p>
+  <p>Země: {{ film.zeme | join (" / ") }}</p>
+  <p>Žánr: {{ film.zanr | join (" / ") }}</p>
+  <p>Délka: {{ film.delka }}</p>
+  <h2>Obsah</h2>
+  <p>{{ film.obsah.text }}
+      {# {{film.obsah.autor.jmeno}} #}
+      <a href="/data/film {{ film.obsah.autor.jmeno | slug }}">{{ film.obsah.autor.jmeno }}</a>
+  
+  </p>
 
 
 
