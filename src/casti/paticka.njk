@@ -1,27 +1,27 @@
 <footer class="paticka">
+<div class="paticka__obal">
+	<section class="paticka__sekce">
+		<h3 class="paticka__nazev">Podobné weby</h3>
 
-<section class="paticka__sekce">
-	<h3 class="paticka__nazev">Podobné weby</h3>
+		<ul class="paticka__seznam">
+			{% for web in podobneWeby %}
+				<li class="paticka__polozka">
+					<a href="/web/{{ web.adresa | slug }}" class="paticka__odkaz">{{ web.nazev }}</a>
+				</li>
+			{% endfor %}
+		</ul>
+	</section>
 
-	<ul class="paticka__seznam">
-		{% for web in podobneWeby %}
-			<li class="paticka__polozka">
-				<a href="/web/{{ web.adresa | slug }}" class="paticka__odkaz">{{ web.nazev }}</a>
-			</li>
-		{% endfor %}
-	</ul>
-</section>
+	<section class="paticka__sekce">
 
-<section class="paticka__sekce">
+		<h3 class="paticka__nazev">Obecné</h3>
 
-	<h3 class="paticka__nazev">Obecné</h3>
+		<ul>
 
-	<ul>
+		</ul>
 
-	</ul>
-
-</section>
-
+	</section>
+</div>
 </footer>
 
 

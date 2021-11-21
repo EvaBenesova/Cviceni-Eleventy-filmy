@@ -1,6 +1,7 @@
 .paticka{
    background-color: #fafafa;
    padding: 1rem;
+   
 
    
    &__nazev{
@@ -27,10 +28,18 @@
       text-decoration: underline;
    }
 
-
-  
-
-     
+   
 
 }
 
+@media (min-width: 528px){
+   .paticka__obal{
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      max-width: $sirka-obsahu;
+      margin: auto;
+      &__sekce{
+         max-width: $sirka-obsahu;
+      }
+   }
+}

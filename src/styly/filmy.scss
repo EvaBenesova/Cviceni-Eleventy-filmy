@@ -1,6 +1,7 @@
 .filmy{
-	padding: $mezera-od-okraju;
+   padding: $mezera-od-okraju;
    &__obal{
-      max-width: 5rem;
+      max-width: $sirka-obsahu;
+		margin: auto;
    }
 }
