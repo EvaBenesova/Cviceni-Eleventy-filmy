@@ -30,11 +30,14 @@ permalink: "/film/{{ film.nazev | slug }}/"
 {# <img class="plakat__obrazek" src={{ film.plakat.ur l}} alt="plakat"> #}
 
   <section class="vedlejsi">
+    <div class="plakat">
+      <img src="{{ film.plakat.url}}" class="plakat__detail" alt="plakat">
+    </div>
     <h3 class="vedlejsi__podnadpis">Související filmy</h3>
     <ul class="vedlejsi__seznam">
       {% for souvisejici in film.souvisejici %}
         <li class="vedlejsi__polozka">
-          <a href="/souvisejici/ {{ souvisejici.nazev | slug }}" class="vedlejsi__odkaz">{{ souvisejici.nazev}}</a>
+          <a href="/film/{{ souvisejici.nazev | slug }}" class="vedlejsi__odkaz">{{souvisejici.nazev}}</a>
         </li>
       {% endfor%}
     </ul>

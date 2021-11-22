@@ -60,3 +60,20 @@
       margin-right: 0.5em;
    }
 }
+
+.plakat{
+   width:100%;
+}
+
+
+@media (min-width: 528px){
+   .filmy{
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      max-width: $sirka-obsahu;
+      margin: auto;
+   }
+   .plakat__detail{
+      width: 192px;
+   }
+}
