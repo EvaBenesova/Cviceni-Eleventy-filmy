@@ -5,16 +5,14 @@
 		max-width: $sirka-obsahu;
 		margin: auto;
       padding: 0.2em 0;
+      color: black;
+      font-size: 32px;
    }
    &__seznam{
       max-width: $sirka-obsahu;
 		margin: auto;
       list-style-type:none;
       padding-left: 0;
-   }
-   &__nazev{
-      color: black;
-      font-size: 32px;
    }
    &__polozka{
       line-height: 1.1;

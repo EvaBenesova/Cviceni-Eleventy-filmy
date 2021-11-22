@@ -21,3 +21,42 @@
       margin: 0;
    }
 }
+.vedlejsi{
+   max-width: $sirka-obsahu;
+	margin: auto;
+   &__podnadpis{
+      padding: 0.2em 0;
+      color: black;
+      font-size: 24px;
+   }
+   &__seznam{
+      list-style-type:none;
+      padding-left: 0;
+   }
+   &__polozka{
+      line-height: 1.1;
+      padding: 0.2em 0;
+   }
+   
+   &__odkaz{
+      text-decoration: none; 
+      color: $doplnkova-barva;     
+   }
+   &__odkaz:hover{
+      text-decoration: underline;
+      color: $doplnkova-barva;
+   }
+   &__odkaz:visited{
+      text-decoration: underline;
+      color: $doplnkova-barva;
+   }
+   &__odkaz::before{
+      content:"";
+      display: inline-block;
+      background-color: $doplnkova-barva;
+      width: 0.5rem;
+      height: 0.5rem;
+      margin-bottom: 0.1em;
+      margin-right: 0.5em;
+   }
+}
