@@ -18,7 +18,9 @@
 
  		 	gtag('config', 'G-HPHV9R6Q1L');
 		</script>
-		<title>FILMY.cz</title>
+		<title>
+			{% if film %} {{ film.nazev}} | {% endif %}FILMY.cz
+		</title>
 	</head>
 	<body>
    	{% include "hlavicka.njk" %}
